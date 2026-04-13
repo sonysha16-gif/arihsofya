@@ -21,10 +21,12 @@ export default function Hero() {
             <img
               src="./photo.png"
               alt="Арих Софья"
-              className="w-full h-full object-contain object-center filter grayscale contrast-120 brightness-75 scale-100 origin-top"
+              className="w-full h-full object-contain object-center scale-100 origin-top"
               style={{ 
                 maskImage: 'radial-gradient(ellipse at 50% 40%, black 40%, transparent 95%)',
-                WebkitMaskImage: 'radial-gradient(ellipse at 50% 40%, black 40%, transparent 95%)'
+                WebkitMaskImage: 'radial-gradient(ellipse at 50% 40%, black 40%, transparent 95%)',
+                filter: 'grayscale(100%) contrast(1.2) brightness(0.75)',
+                WebkitFilter: 'grayscale(100%) contrast(1.2) brightness(0.75)'
               }}
               referrerPolicy="no-referrer"
             />
@@ -34,10 +36,12 @@ export default function Hero() {
             <img
               src="./photo.png"
               alt="Арих Софья"
-              className="w-full h-full object-cover object-right-top filter grayscale contrast-120 brightness-75 scale-[0.85] translate-x-[18%] origin-top"
+              className="w-full h-full object-cover object-right-top scale-[0.85] translate-x-[18%] origin-top"
               style={{ 
                 maskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)',
-                WebkitMaskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)'
+                WebkitMaskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)',
+                filter: 'grayscale(100%) contrast(1.2) brightness(0.75)',
+                WebkitFilter: 'grayscale(100%) contrast(1.2) brightness(0.75)'
               }}
               referrerPolicy="no-referrer"
             />
