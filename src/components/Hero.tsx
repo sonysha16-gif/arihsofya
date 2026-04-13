@@ -9,7 +9,7 @@ export default function Hero() {
       
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-40">
-        <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-brand-primary/20 blur-[120px] rounded-full" />
+        <div className="absolute top-[-15%] left-[-15%] w-[50%] h-[50%] bg-brand-primary/10 blur-[120px] rounded-full" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-brand-accent/20 blur-[150px] rounded-full" />
       </div>
  
