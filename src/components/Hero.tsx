@@ -8,7 +8,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-noise opacity-[0.03] pointer-events-none z-10" />
       
       {/* Background Gradients */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30">
+      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-40">
+        <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-brand-primary/20 blur-[120px] rounded-full" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-brand-accent/20 blur-[150px] rounded-full" />
       </div>
  
@@ -20,7 +21,7 @@ export default function Hero() {
             <img
               src="./photo.png"
               alt="Арих Софья"
-              className="w-full h-full object-contain object-center filter grayscale contrast-110 brightness-90 scale-100 origin-top"
+              className="w-full h-full object-contain object-center filter grayscale contrast-120 brightness-75 scale-100 origin-top"
               style={{ 
                 maskImage: 'radial-gradient(ellipse at 50% 40%, black 40%, transparent 95%)',
                 WebkitMaskImage: 'radial-gradient(ellipse at 50% 40%, black 40%, transparent 95%)'
@@ -33,15 +34,15 @@ export default function Hero() {
             <img
               src="./photo.png"
               alt="Арих Софья"
-              className="w-full h-full object-cover object-right-top filter grayscale contrast-125 brightness-50 scale-[0.85] translate-x-[18%] origin-top"
+              className="w-full h-full object-cover object-right-top filter grayscale contrast-120 brightness-75 scale-[0.85] translate-x-[18%] origin-top"
               style={{ 
-                maskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 70%, transparent 95%)',
-                WebkitMaskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 70%, transparent 95%)'
+                maskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)',
+                WebkitMaskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)'
               }}
               referrerPolicy="no-referrer"
             />
-            {/* Minimal blending gradient at the very bottom only */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-bg-main to-transparent pointer-events-none" />
+            {/* Subtle bottom fade */}
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg-main to-transparent pointer-events-none" />
           </div>
         </div>
       </div>
