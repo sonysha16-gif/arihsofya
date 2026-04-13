@@ -34,15 +34,15 @@ export default function Hero() {
             <img
               src="./photo.png"
               alt="Арих Софья"
-              className="w-full h-full object-cover object-right-top filter grayscale contrast-110 brightness-90 scale-[0.85] translate-x-[18%] origin-top"
+              className="w-full h-full object-cover object-right-top filter grayscale contrast-110 scale-[0.85] translate-x-[18%] origin-top"
               style={{ 
-                maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 10%, black 50%)',
-                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 10%, black 50%)'
+                maskImage: 'linear-gradient(to right, transparent 0%, transparent 5%, rgba(0,0,0,0.5) 20%, black 45%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, transparent 5%, rgba(0,0,0,0.5) 20%, black 45%)'
               }}
               referrerPolicy="no-referrer"
             />
-            {/* Blending Gradients to hide seams */}
-            <div className="absolute inset-0 bg-gradient-to-t from-bg-main via-transparent to-transparent" />
+            {/* Blending Gradients to hide bottom edge only */}
+            <div className="absolute inset-0 bg-gradient-to-t from-bg-main via-transparent to-transparent pointer-events-none" />
           </div>
         </div>
       </div>
