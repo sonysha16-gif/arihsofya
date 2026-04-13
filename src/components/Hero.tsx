@@ -9,7 +9,7 @@ export default function Hero() {
       
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-40">
-        <div className="absolute top-[-15%] left-[-15%] w-[50%] h-[50%] bg-brand-primary/10 blur-[120px] rounded-full" />
+        <div className="absolute top-[-25%] left-[-15%] w-[60%] h-[60%] bg-brand-primary/15 blur-[140px] rounded-full" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-brand-accent/20 blur-[150px] rounded-full" />
       </div>
  
@@ -38,8 +38,8 @@ export default function Hero() {
               alt="Арих Софья"
               className="w-full h-full object-cover object-right-top scale-[0.85] translate-x-[18%] origin-top"
               style={{ 
-                maskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)',
-                WebkitMaskImage: 'linear-gradient(to left, black 40%, rgba(0,0,0,0.4) 75%, transparent 98%)',
+                maskImage: 'linear-gradient(to left, black 45%, rgba(0,0,0,0.4) 80%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to left, black 45%, rgba(0,0,0,0.4) 80%, transparent 100%)',
                 filter: 'grayscale(100%) contrast(1.2) brightness(0.75)',
                 WebkitFilter: 'grayscale(100%) contrast(1.2) brightness(0.75)'
               }}
