@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", sans-serif;
+  
+  --color-brand-primary: #00FF94;
+  --color-brand-secondary: #00D1FF;
+  --color-brand-accent: #7000FF;
+  
+  --color-bg-main: #050505;
+  --color-bg-alt: #0A0A0F;
+  --color-bg-dark: #000000;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+  
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg-main text-text-primary font-sans antialiased selection:bg-brand-primary selection:text-black;
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent;
+  }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+  .bento-card {
+    @apply bg-bg-alt border border-brand-primary/20 rounded-[2rem] p-8 transition-all duration-500 shadow-[0_0_50px_rgba(0,255,148,0.15)] hover:shadow-[0_0_80px_rgba(0,255,148,0.3)] hover:border-brand-primary/50 hover:-translate-y-1 cursor-pointer;
+  }
+  .btn-glow {
+    @apply relative overflow-hidden bg-gradient-to-r from-[#00FF94] to-[#00D1FF] text-black border-none transition-all duration-500 cursor-pointer shadow-[0_0_30px_rgba(0,255,148,0.5)];
+  }
+  .btn-glow:hover {
+    @apply scale-[1.05] brightness-110 shadow-[0_0_60px_rgba(0,255,148,0.8)];
+    background: linear-gradient(135deg, #00FF94 0%, #00D1FF 100%);
+  }
+  
+  .glow-block {
+    @apply bg-bg-alt border border-brand-primary/15 rounded-[2.5rem] shadow-[0_0_40px_rgba(0,255,148,0.1)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(0,255,148,0.2)] hover:border-brand-primary/30;
+  }
+  button, a {
+    @apply cursor-pointer;
+  }
+  
+  /* Mobile Spacing Reduction */
+  @media (max-width: 768px) {
+    section {
+      @apply !py-12;
+    }
+  }
+}
